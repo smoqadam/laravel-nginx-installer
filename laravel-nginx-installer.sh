@@ -63,7 +63,7 @@ ${Green}Usage:${NC}
 ${Green}Options:${NC}
     -v, --laravel-version  	install specific laravel version. default is 5.1
     -w, --with-virtualhost 	add virtual host to nginx or not
-    -d, --doamin 		virtual host domain name
+    -d, --domain 		virtual host domain name
     -r, --root 			root directory to install laravel
     -h, --help			display this help message
 ${Green}Example:${NC}
