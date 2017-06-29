@@ -10,7 +10,7 @@ install_composer(){
     php="which php"
     $php composer-setup.php --install-dir=/usr/local/bin/composer --filename=composer
     $php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
-    rm -f compsoer-setup.php
+    rm -f composer-setup.php
 }
 
 
