@@ -7,7 +7,7 @@ Yellow='\033[0;33m'       # Yellow
 NC='\033[0m' # No Color
 
 install_composer(){
-    php="which php"
+    php=$(which php)
     $php composer-setup.php --install-dir=/usr/local/bin/composer --filename=composer
     $php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
     rm -f composer-setup.php
@@ -121,5 +121,5 @@ fi
 sudo chown -R $USER:www-data $path
 
 echo "*****************************"
-echo -e "${Yello}Done. Now open http://$domain/${NC}"
+echo -e "${Yellow}Done. Now open http://$domain/${NC}"
 
